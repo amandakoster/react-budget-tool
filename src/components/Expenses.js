@@ -17,6 +17,13 @@ class Expenses extends Component{
     this.setState({budget});
   }
 
+  handleNewExpense(expense){
+    this.setState( currentState => ({expenses: [...currentState.expenses, expense]})
+    );
+    console.log(this.state);
+  }
+
+
   render() {
 
     let totalSpent = 0;

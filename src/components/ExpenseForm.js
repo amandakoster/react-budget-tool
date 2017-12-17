@@ -18,9 +18,9 @@ class ExpenseForm extends Component {
     this.setState({[e.target.name] : e.target.value});
   }
 
-  handleNewExpense(expense) {
-    console.log(expense);
-
+  handleNewExpense(e) {
+    e.preventDefault();
+    this.props.handler(this.state);
   }
 
 
