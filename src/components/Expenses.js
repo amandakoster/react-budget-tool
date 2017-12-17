@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ExpenseForm from './ExpenseForm';
 
 class Expenses extends Component{
   constructor(props) {
@@ -40,6 +41,7 @@ class Expenses extends Component{
 
         <div>
           <h2>Expenses</h2>
+          <ExpenseForm handler={this.handleNewExpense} />
           <table>
             <thead>
               <tr>
