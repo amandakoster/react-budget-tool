@@ -16,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <main className='app'>
-        <h1>React Note Form</h1>
+        <h1>React Redux ToDo App</h1>
       </main>
     );
   }
