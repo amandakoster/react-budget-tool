@@ -8,6 +8,12 @@ class Expenses extends Component{
       budget: 0,
       expenses: [],
     };
+    this.handleNewBudget = this.handleNewBudget.bind(this);
+  }
+
+  handleNewBudget(e) {
+    let budget = e.target.value;
+    this.setState({budget});
   }
 
   render() {
@@ -18,14 +24,44 @@ class Expenses extends Component{
     return(
 
       <div id='budgetWrapper'>
+
         <div>
           <h2>Budget Summary</h2>
           <h3>Budget: {this.state.budget}</h3>
           <h3>Spent: {totalSpent}</h3>
-          <h3>Budget: {totalRemaining}</h3>
+          <h3>Remaining: {totalRemaining}</h3>
+
+          <form>
+            <input type="number" 
+              onChange={this.handleNewBudget} 
+              placeholder="Enter New Budget Amount"></input>
+          </form>
         </div>
 
-        <h1>Budget</h1>
+        <div>
+          <h2>Expenses</h2>
+          <table>
+            <thead>
+              <tr>
+                <th colSpan='2'>Expense</th>
+                <th colSpan='2'>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                this.state.expenses.map((expenses, i) =>
+                  <tr key={expenses.id}>
+                    <td><a href="#">x</a></td>
+                    <td>{expenses.name}</td>
+                    <td>{expenses.amount}</td>
+                  </tr>
+                    
+                )
+              }
+            </tbody>
+          </table>
+        </div>
+
       </div>
 
     );

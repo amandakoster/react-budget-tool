@@ -28,6 +28,7 @@ class App extends React.Component {
         <Header appTitle="ToDo with Redux" />
         <Navbar />
         <main className='app'>
+          <Expenses />
         </main>
     
 
