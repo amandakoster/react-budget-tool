@@ -44,7 +44,7 @@ class App extends React.Component {
 
       <div>
 
-        <Header appTitle="ToDo with Redux" />
+        <Header appTitle="Budget with Redux" />
         <Navbar />
         <main className='mainApp'>
           <Route exact path='/' component={Home} />

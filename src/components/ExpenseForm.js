@@ -25,7 +25,7 @@ class ExpenseForm extends Component {
 
 
   render(){
-    console.log('__F__STATE', this.state);
+    // console.log('__F__STATE', this.state);
     return(
 
       <form onSubmit={this.handleNewExpense}>
