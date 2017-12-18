@@ -30,11 +30,12 @@ class ExpenseForm extends Component {
       <form onSubmit={this.handleNewExpense}>
 
         <lable>
-        Expense Item: <input type="text" name="name" onChange={this.handleChange} />
+        Expense Item: <input placeholder="Expense Item" type="text" name="name" onChange={this.handleChange} />
         </lable>
         <lable>
-        Amount: <input type="number" name="amount" onChange={this.handleChange}/>
+        Amount: <input placeholder="Amount" type="number" name="amount" onChange={this.handleChange}/>
         </lable>
+        <button type="submit">Add Expense</button>
 
       </form>
 

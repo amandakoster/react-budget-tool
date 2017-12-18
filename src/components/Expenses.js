@@ -17,11 +17,11 @@ class Expenses extends Component{
     this.setState({budget});
   }
 
-  handleNewExpense(expense){
-    this.setState( currentState => ({expenses: [...currentState.expenses, expense]})
-    );
-    console.log(this.state);
+  handleNewExpense(expense) {
+    this.setState( currentState => ({expenses: [...currentState.expenses, expense]}) );
   }
+
+  //this was some bad ass state management!
 
 
   render() {
