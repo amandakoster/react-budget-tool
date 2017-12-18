@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import uuid from 'uuid/v4';
-import Expenses from './Expenses';
+// import Expenses from './Expenses';
 
 class ExpenseForm extends Component {
   constructor(props){
@@ -25,16 +25,15 @@ class ExpenseForm extends Component {
 
 
   render(){
+    console.log('__F__STATE', this.state);
     return(
 
       <form onSubmit={this.handleNewExpense}>
 
-        <lable>
-        Expense Item: <input placeholder="Expense Item" type="text" name="name" onChange={this.handleChange} />
-        </lable>
-        <lable>
-        Amount: <input placeholder="Amount" type="number" name="amount" onChange={this.handleChange}/>
-        </lable>
+        <input placeholder="Expense Item" type="text" name="name" onChange={this.handleChange} />
+   
+        <input placeholder="Amount" type="number" name="amount" onChange={this.handleChange}/>
+ 
         <button type="submit">Add Expense</button>
 
       </form>
