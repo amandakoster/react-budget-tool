@@ -10,6 +10,7 @@ class Expenses extends Component{
       expenses: [],
     };
     this.handleNewBudget = this.handleNewBudget.bind(this);
+    this.handleNewExpense = this.handleNewExpense.bind(this);
   }
 
   handleNewBudget(e) {
