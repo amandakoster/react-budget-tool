@@ -27,7 +27,6 @@ class Expenses extends Component{
     );
   }
 
-
   handleNewBudget(e) {
     e.preventDefault();
     let budget = e.target.querySelector('input[name=budget]').value;
@@ -74,7 +73,6 @@ class Expenses extends Component{
             )
           }
 
-
           <table>
             <thead>
               <tr>
@@ -103,7 +101,6 @@ class Expenses extends Component{
 
     );
   }
-
 }
 
 export default Expenses;

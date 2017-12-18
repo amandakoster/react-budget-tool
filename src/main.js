@@ -1,3 +1,7 @@
+'use strict';
+
+// import './style/app.scss'; WHY IS THIS NOT WORKING??
+
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import ReactDom from 'react-dom';
@@ -6,6 +10,8 @@ import Expenses from './components/Expenses';
 import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+//import  store- create instance - wrap root with providcer
 
 let renderIf = (test, component) =>  test ? component : undefined;
 
