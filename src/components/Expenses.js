@@ -10,17 +10,29 @@ class Expenses extends Component{
 
     this.handleNewBudget = this.handleNewBudget.bind(this);
     this.handleNewExpense = this.handleNewExpense.bind(this);
+    this.deleteExpenseItem = this.deleteExpenseItem.bind(this);
   }
   componentDidMount(e){
     console.log('__E__STATE', this.state);
+  }
+
+  deleteExpenseItem(e) {
+    e.preventDefault();
+    let id = e.target.dataset['key'];
+    this.props.app.setState(
+      currentState =>
+        ( {expenses: currentState.expenses.filter( (expense, i) => {
+          return expense.id !== id;
+        })})
+    );
   }
 
 
   handleNewBudget(e) {
     e.preventDefault();
     let budget = e.target.querySelector('input[name=budget]').value;
-    // this.props.app.setState({budget});
-    this.props.handler(budget);
+    this.props.app.setState({budget});
+    // this.props.handler(budget);
   }
 
   handleNewExpense(expense) {
@@ -35,7 +47,7 @@ class Expenses extends Component{
 
     let totalRemaining = this.props.app.state.budget - totalSpent;
 
-    return(
+    return (
 
       <div id='budgetWrapper'>
 
@@ -63,10 +75,6 @@ class Expenses extends Component{
           }
 
 
-
-          
-
- 
           <table>
             <thead>
               <tr>
@@ -76,9 +84,12 @@ class Expenses extends Component{
             </thead>
             <tbody>
               {
-                this.props.app.state.expenses.map( (expense,i) =>
+                this.props.app.state.expenses.map( (expense, i) =>
+          
                   <tr key={expense.id}>
-                    <td><a href="#">x</a></td>
+                    <td><a onClick ={this.deleteExpenseItem} 
+                      data-key={expense.id}
+                      href="#">x</a></td>
                     <td>{expense.name}</td>
                     <td>{expense.amount}</td>
                   </tr>
