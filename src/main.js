@@ -1,5 +1,3 @@
-'use strict';
-
 // import './style/app.scss'; WHY IS THIS NOT WORKING??
 
 import React, { Component } from 'react';
