@@ -1,12 +1,12 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 
 import ExpenseForm from '../../components/ExpenseForm.js';
 
 describe('<ExpenseForm />', () => {
 
-  let name = 'Foo';
+  let name = 'foo';
   let amount = 10;
 
   let expenseCreate = (state) => {
@@ -16,10 +16,10 @@ describe('<ExpenseForm />', () => {
 
   let ExpenseForm = shallow(<ExpenseForm handler={expenseCreate} />);
 
-  ExpenseForm.find('.item').simulate( 'change', {target: {name:'name', value:'name'} });
-  ExpenseForm.find('item').simulate( 'change', {target: {name:'amount', value: 'amount'} });
-  ExpenseForm.find('form').simulate( 'submit', { preventDefault: () => {} });
+  ExpenseForm.find('.item').simulate('change', { target: { name: 'name', value: 'name' } });
+  ExpenseForm.find('item').simulate('change', { target: { name: 'amount', value: 'amount' } });
+  ExpenseForm.find("form").simulate( 'submit', { preventDefault:()=>{} } );
+    
+});
 
-});
-  
-});
+})

@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
+    "test": "jest -i --verbose",
     "start": "webpack-dev-server",
-    "build": "webpack",
-    "test": "jest"
+    "build": "webpack"
   },
   "jest": {
     "setupFiles": [
