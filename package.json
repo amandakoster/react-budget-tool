@@ -13,12 +13,13 @@
       "<rootDir>/src/test/shim.js",
       "<rootDir>/src/test/setup.js"
     ],
+
     "moduleNameMapper": {
       "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
     }
   },
   "keywords": [],
-  "author": "",
+  "author": "Amanda Koster",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.26.0",
