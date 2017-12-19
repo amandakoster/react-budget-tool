@@ -1,4 +1,4 @@
-## React Bduget Tool
+## React Budget Tool
 
 ### This is a React budget tool that manages state without Redux. 
 
