@@ -1,7 +1,10 @@
 {
-  "name": "counter",
+  "name": "react-budget-tool",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "6.11.1"
+  },
   "main": "main.js",
   "scripts": {
     "test": "jest -i --verbose",
