@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import './style/main.scss';
-=======
-import './style/app.scss';
->>>>>>> 94fd5d1c4e5a6a77f26b64028356ae6f967056e2
 
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
