@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Expenses> renders a model when balance <=0 1`] = `
+<div
+  id="budgetWrapper"
+>
+  <div>
+    <h2>
+      Budget Summary
+    </h2>
+    <h3>
+      Budget: 
+      10
+    </h3>
+    <h3>
+      Spent: 
+      11
+    </h3>
+    <h3>
+      Remaining: 
+      -1
+    </h3>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        name="budget"
+        placeholder="Enter Budget Amount"
+        type="number"
+      />
+      <button>
+        Set Budget
+      </button>
+    </form>
+  </div>
+  <div>
+    <h2>
+      Expenses
+    </h2>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        name="name"
+        onChange={[Function]}
+        placeholder="Expense Item"
+        type="text"
+      />
+      <input
+        name="amount"
+        onChange={[Function]}
+        placeholder="Amount"
+        type="number"
+      />
+      <button
+        type="submit"
+      >
+        Add Expense
+      </button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th
+            colSpan="2"
+          >
+            Expense
+          </th>
+          <th
+            colSpan="2"
+          >
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a
+              data-key={1}
+              href="#"
+              onClick={[Function]}
+            >
+              x
+            </a>
+          </td>
+          <td>
+            foo
+          </td>
+          <td>
+            5
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              data-key={2}
+              href="#"
+              onClick={[Function]}
+            >
+              x
+            </a>
+          </td>
+          <td>
+            bar
+          </td>
+          <td>
+            6
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`<Expenses> renders with a clean state 1`] = `
+<div
+  id="budgetWrapper"
+>
+  <div>
+    <h2>
+      Budget Summary
+    </h2>
+    <h3>
+      Budget: 
+      0
+    </h3>
+    <h3>
+      Spent: 
+      0
+    </h3>
+    <h3>
+      Remaining: 
+      0
+    </h3>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        name="budget"
+        placeholder="Enter Budget Amount"
+        type="number"
+      />
+      <button>
+        Set Budget
+      </button>
+    </form>
+  </div>
+  <div>
+    <h2>
+      Expenses
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th
+            colSpan="2"
+          >
+            Expense
+          </th>
+          <th
+            colSpan="2"
+          >
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
