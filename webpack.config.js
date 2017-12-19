@@ -10,22 +10,26 @@ module.exports = {
     
   // Load this and everythning it cares about
   entry: `${__dirname}/src/main.js`,
-
+    
+  devServer: { 
+    historyApiFallback:true,
+  },
+    
   devtool: 'source-map',
-
+    
   // Stick it into the "path" folder with that file name
   output: {
     filename: 'bundle.[hash].js',
     path: `${__dirname}/build`,
   }, 
-
+    
   plugins: [
     new HTMLPlugin({
       template: `${__dirname}/src/index.html`,
     }),
     new ExtractPlugin('bundle.[hash].css'),
   ],
-
+    
   module: {
     rules: [
       // If it's a .js file not in node_modules, use the babel-loader
@@ -57,7 +61,7 @@ module.exports = {
           ],
         }),
       },
-      
+            
     ],
   },
     

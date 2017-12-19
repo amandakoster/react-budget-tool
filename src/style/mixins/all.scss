@@ -1,8 +1,9 @@
-@import './borders.scss';
-@import './circles.scss';
-
+@import "./typography",
+		"./borders",
+		"./circles";
+		
 @mixin grey-placemat {
-    color: #666;
-    text-shadow: 0 1px #fff;
-    background: #eee;
+	color:#666;
+	text-shadow:0 1px 0 #fff;
+	background:#eee
 }
