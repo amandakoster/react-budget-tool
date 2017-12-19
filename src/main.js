@@ -48,7 +48,7 @@ class App extends React.Component {
 
       <div>
 
-        <Header appTitle="Budget with Redux" />
+        <Header appTitle="$ React Budget Tool" />
         <Navbar />
         <main className='mainApp'>
           <Route exact path='/' component={Home} />

@@ -3,6 +3,7 @@ $hbase:3em;
     @for $i from $from through $to{
       h#{$i}{
         font-size:calc( #{$hbase} * ( 1 - (#{$i} * .2 ) );
+        padding: 0.75vh;
       }
     }
 }

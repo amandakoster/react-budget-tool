@@ -2,7 +2,7 @@
 @import './helpers/variables';
 
 // Mixins & Helpers
-// @import "./helpers/_reset.css";
+@import "./helpers/_reset.css";
 @import "./mixins/all.scss";
 
 // Themes
@@ -12,7 +12,7 @@
         "./components/header",
         "./components/footer",
         "./components/navbar",
-        // "./components/modal",
+        "./components/home",
         "./components/expenses",
         "./components/expenses-list",
         "./components/expense-form",

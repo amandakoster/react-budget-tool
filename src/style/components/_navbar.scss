@@ -1,5 +1,5 @@
 nav {
-    background:#414141;
+    background:#F0FFFF;
     height:2em;
     line-height:2em;
     width: 100%;
@@ -12,20 +12,21 @@ nav {
             padding:0 1em;
             position:relative;
             width: 100px;
+            list-style: none;
         }
         
         li:hover {
-           background:#ccc;
+           background:rgb(208, 243, 231);
            
            a {
-               color: #000;
+               color:#1FC66F;
            }
         }
     }
     
     a {
         text-decoration:none;
-        color:#fff;
+        color:#1FC66F;
         
         &:after {
             bottom:0;
