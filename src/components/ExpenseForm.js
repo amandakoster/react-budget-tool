@@ -29,6 +29,7 @@ class ExpenseForm extends Component {
     return(
 
       <form id="expense-form" onSubmit={this.handleNewExpense}>
+
         <input className="form-item" placeholder="Expense Item" type="text" name="name" onChange={this.handleChange} />
    
         <input className="form-amount" placeholder="Amount" type="number" name="amount" onChange={this.handleChange}/>

@@ -2,10 +2,10 @@
   "name": "counter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest -i --verbose",
-    "watch": "webpack-dev-server --inline --hot --public $C9_HOSTNAME --host $IP --port $PORT",
+    "start": "webpack-dev-server",
     "build": "webpack"
   },
   "jest": {
