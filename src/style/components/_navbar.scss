@@ -1,0 +1,40 @@
+nav {
+    background:#F0FFFF;
+    height:2em;
+    line-height:2em;
+    width: 100%;
+   
+    ul {
+        display:flex;
+        flex-direction:row;
+        
+        li {
+            padding:0 1em;
+            position:relative;
+            width: 100px;
+            list-style: none;
+        }
+        
+        li:hover {
+           background:rgb(208, 243, 231);
+           
+           a {
+               color:#1FC66F;
+           }
+        }
+    }
+    
+    a {
+        text-decoration:none;
+        color:#1FC66F;
+        
+        &:after {
+            bottom:0;
+            content:"";
+            left:0;
+            position:absolute;
+            right:0;
+            top:0;
+        }
+    }
+}

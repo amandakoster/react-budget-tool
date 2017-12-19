@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import './style/main.scss';
+=======
 import './style/app.scss';
+>>>>>>> 94fd5d1c4e5a6a77f26b64028356ae6f967056e2
 
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
@@ -48,7 +52,7 @@ class App extends React.Component {
 
       <div>
 
-        <Header appTitle="Budget with Redux" />
+        <Header appTitle="$ React Budget Tool" />
         <Navbar />
         <main className='mainApp'>
           <Route exact path='/' component={Home} />

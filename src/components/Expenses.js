@@ -58,7 +58,7 @@ class Expenses extends Component{
 
           <form onSubmit={this.handleNewBudget} >
             <input name="budget" type="number" 
-              placeholder="Enter Budget Amount" />
+              placeholder="Enter Your Budget"/>
             <button>Set Budget</button>
 
           </form>
