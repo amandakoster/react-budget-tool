@@ -1,4 +1,4 @@
-const path = require('path');
+'use strict';
 
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const htmlWebpackPluginConfig = new htmlWebpackPlugin({
@@ -27,13 +27,29 @@ module.exports = {
         exclude : /node_modules/
       },
       {
-        test : /\.scss$/,
-        loader : 'style-loader!css-loader!sass-loader'
-      }
+        test: /\.scss$/,
+        loader: ExtractPlugin.extract({
+          // These get loaded in reverse order and the output of one pipes into the other (think of a then)
+          use: [
+            {
+              loader: 'css-loader', 
+              options: {
+                sourceMap:true,
+              },
+            },
+            'resolve-url-loader',
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                includePaths:[`${__dirname}/src/style`],
+              },
+            },
+          ],
+        }),
+      },
+      
     ],
   },
-  devServer : {
-    historyApiFallback: true,
-  },
-  plugins : [htmlWebpackPluginConfig],
-}
+    
+};
