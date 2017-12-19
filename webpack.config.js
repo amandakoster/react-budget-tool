@@ -8,7 +8,7 @@ const htmlWebpackPluginConfig = new htmlWebpackPlugin({
 });
 
 module.exports = {
-  entry   : './src/index.js',
+  entry   : './src/main.js',
   output  : {
     path  : path.resolve('dist'),
     filename : 'index_bundle.js',
