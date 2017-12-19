@@ -6,8 +6,6 @@ import Expenses from '../../components/Expenses';
 
 describe('<Expenses>', () => {
 
-    
-
   test('renders with a clean state', () => {
 
     let app = {
