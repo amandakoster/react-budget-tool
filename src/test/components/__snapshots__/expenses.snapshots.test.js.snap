@@ -43,17 +43,13 @@ exports[`<Expenses> renders a model when balance <=0 1`] = `
     >
       <input
         className="form-item"
-      onSubmit={[Function]}
-    >
-      <input
-
         name="name"
         onChange={[Function]}
         placeholder="Expense Item"
         type="text"
       />
       <input
-        className="form-amount"master
+        className="form-amount"
         name="amount"
         onChange={[Function]}
         placeholder="Amount"
