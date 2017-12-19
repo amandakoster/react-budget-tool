@@ -10,24 +10,15 @@
   },
   "jest": {
     "setupFiles": [
-<<<<<<< HEAD
-      "<rootDir>/src/__test__/shim.js",
-      "<rootDir>/src/__test__/setup.js"
-=======
       "<rootDir>/src/test/shim.js",
       "<rootDir>/src/test/setup.js"
->>>>>>> 94fd5d1c4e5a6a77f26b64028356ae6f967056e2
     ],
     "moduleNameMapper": {
       "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
     }
   },
   "keywords": [],
-<<<<<<< HEAD
   "author": "",
-=======
-  "author": "Amanda Koster",
->>>>>>> 94fd5d1c4e5a6a77f26b64028356ae6f967056e2
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.26.0",
