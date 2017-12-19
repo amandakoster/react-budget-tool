@@ -28,13 +28,13 @@ class ExpenseForm extends Component {
     // console.log('__F__STATE', this.state);
     return(
 
-      <form onSubmit={this.handleNewExpense}>
+      <form id="expense-form" onSubmit={this.handleNewExpense}>
 
-        <input placeholder="Expense Item" type="text" name="name" onChange={this.handleChange} />
+        <input className="form-item" placeholder="Expense Item" type="text" name="name" onChange={this.handleChange} />
    
-        <input placeholder="Amount" type="number" name="amount" onChange={this.handleChange}/>
+        <input className="form-amount" placeholder="Amount" type="number" name="amount" onChange={this.handleChange}/>
  
-        <button type="submit">Add Expense</button>
+        <button className="form-button" type="submit">Add Expense</button>
 
       </form>
 
