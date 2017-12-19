@@ -1,5 +1,18 @@
 'use strict';
 
+// Dynamic Script and Style Tags
+const HTMLPlugin = require('html-webpack-plugin');
+
+// Makes a separate CSS bundle
+const ExtractPlugin = require('extract-text-webpack-plugin');
+
+module.exports = {
+    
+  // Load this and everythning it cares about
+  entry: `${__dirname}/src/main.js`,
+    
+  devServer: { 
+    historyApiFallback:true,
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const htmlWebpackPluginConfig = new htmlWebpackPlugin({
   template  : './src/index.html',
@@ -48,7 +61,7 @@ module.exports = {
           ],
         }),
       },
-      
+            
     ],
   },
     
