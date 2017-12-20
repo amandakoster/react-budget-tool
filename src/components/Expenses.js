@@ -48,16 +48,16 @@ class Expenses extends Component{
 
     return (
 
-      <div id='budgetWrapper'>
+      <React.Fragment>
 
-        <div>
+        <div id='budgetWrapper'>
           <h2>Budget Summary</h2>
           <h3>Budget: {this.props.app.state.budget}</h3>
           <h3>Spent: {totalSpent}</h3>
           <h3>Remaining: {totalRemaining}</h3>
 
           <form onSubmit={this.handleNewBudget} >
-            <input name="budget" type="number" 
+            <input name="budget" type="number"
               placeholder="Enter Your Budget"/>
             <button>Set Budget</button>
 
@@ -83,9 +83,9 @@ class Expenses extends Component{
             <tbody>
               {
                 this.props.app.state.expenses.map( (expense, i) =>
-          
+
                   <tr key={expense.id}>
-                    <td><a onClick ={this.deleteExpenseItem} 
+                    <td><a onClick ={this.deleteExpenseItem}
                       data-key={expense.id}
                       href="#">x</a></td>
                     <td>{expense.name}</td>
@@ -97,7 +97,7 @@ class Expenses extends Component{
           </table>
         </div>
 
-      </div>
+        </React.Fragment>
 
     );
   }

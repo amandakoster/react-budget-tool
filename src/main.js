@@ -46,19 +46,19 @@ class App extends React.Component {
   render() {
     return (
 
-      <div>
+      <React.Fragment>
 
         <Header appTitle="$ React Budget Tool" />
         <Navbar />
         <main className='mainApp'>
           <Route exact path='/' component={Home} />
-          <Route exact path='/expenses' component={() => <Expenses handler={this.updateTheBudget} app={this.app()}/>} /> 
+          <Route exact path='/expenses' component={() => <Expenses handler={this.updateTheBudget} app={this.app()}/>} />
         </main>
-  
+
 
         <Footer> <p> &copy; 2017 Amanda Koster</p></Footer>
-      </div>
- 
+      </React.Fragment>
+
     );
   }
 }
