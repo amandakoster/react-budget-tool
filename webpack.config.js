@@ -12,6 +12,7 @@ module.exports = {
   entry: `${__dirname}/src/main.js`,
     
   devServer: { 
+    
     historyApiFallback:true,
   },
     
