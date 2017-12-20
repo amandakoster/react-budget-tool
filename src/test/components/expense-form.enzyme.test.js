@@ -19,7 +19,5 @@ describe('<ExpenseForm />', () => {
   ExpenseForm.find('.item').simulate('change', { target: { name: 'name', value: 'name' } });
   ExpenseForm.find('item').simulate('change', { target: { name: 'amount', value: 'amount' } });
   ExpenseForm.find("form").simulate( 'submit', { preventDefault:()=>{} } );
-    
-});
 
-})
+});
